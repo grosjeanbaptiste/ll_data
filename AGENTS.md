@@ -6,37 +6,58 @@ télécharge à l'install.
 ## Stack
 
 Aucun code — uniquement des fichiers de données :
-- `manifest.json` à la racine
-- `packs/*.jsonl.gz`
+- `manifest.json` à la racine (schéma v2)
+- `packs/<source>/<level>/<pair>-v<n>.jsonl.gz`
 - documentation
 
 Les data sont consommées par la crate `ll-packs` (dans
 `ll_app/crates/ll-packs/`) qui les fetch et les pousse dans la DB locale
 via le use case `import_seed`.
 
-## Schéma `manifest.json`
+## Layout des packs
+
+```
+packs/
+  <source>/        # curated | llm | tatoeba
+    <level>/       # a1 | a2 | b1 | b2 | c1 | c2 | none
+      <src>-<dst>-v<n>.jsonl.gz
+```
+
+Exemples :
+- `packs/curated/a1/fr-en-v1.jsonl.gz` — table LEMMAS curée main, CEFR A1, fr→en
+- `packs/llm/a1/fr-en-v1.jsonl.gz` — générée via Claude CLI (ll_lab/scripts/llm/)
+- `packs/tatoeba/none/fr-en-v1.jsonl.gz` — co-occurrence Tatoeba, sans niveau CEFR
+
+`level = "none"` est réservé aux sources qui ne sont pas annotées CEFR
+(typiquement Tatoeba — freq-rank pur).
+
+## Schéma `manifest.json` (v2)
 
 ```json
 {
-  "version": 1,
+  "version": 2,
   "packs": [
     {
-      "id": "tatoeba-fr-en-v1",
-      "version": 1,
+      "id": "curated-a1-fr-en-v1",
+      "source": "curated",
+      "level": "a1",
       "src_lang": "fr",
       "dst_lang": "en",
-      "size_bytes": 5242880,
+      "version": 1,
+      "size_bytes": 1050,
       "sha256": "<sha256 du .jsonl.gz>",
-      "url": "https://raw.githubusercontent.com/grosjeanbaptiste/ll_data/main/packs/tatoeba-fr-en-v1.jsonl.gz",
-      "license": "CC-BY-2.0 (Tatoeba)"
+      "url": "https://raw.githubusercontent.com/grosjeanbaptiste/ll_data/main/packs/curated/a1/fr-en-v1.jsonl.gz",
+      "license": "CC-BY 4.0 (LL curated, A1 CEFR)"
     }
   ]
 }
 ```
 
-`version` au niveau racine = version du **format manifest** (pour gérer
-l'évolution du schéma). `version` au niveau pack = version du pack lui-même
-(pour le invalidation de cache côté client).
+- `version` (racine) = version du **format manifest** (v2 depuis 2026-06-26).
+- `id` = `<source>-<level>-<src>-<dst>-v<n>` (slug stable, unique).
+- `source` ∈ {`curated`, `llm`, `tatoeba`}.
+- `level` ∈ {`a1`, `a2`, `b1`, `b2`, `c1`, `c2`, `none`}.
+- `version` (pack) = version du pack lui-même (pour invalidation de cache).
 
 ## Schéma d'une ligne JSONL (`WireTrio`)
 
