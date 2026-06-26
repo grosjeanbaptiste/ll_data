@@ -19,17 +19,22 @@ via le use case `import_seed`.
 ```
 packs/
   <source>/        # curated | llm | tatoeba
-    <level>/       # a1 | a2 | b1 | b2 | c1 | c2 | none
+    <level>/       # ll-1 | ll-2 | … | ll-7 | none
       <src>-<dst>-v<n>.jsonl.gz
 ```
 
 Exemples :
-- `packs/curated/a1/fr-en-v1.jsonl.gz` — table LEMMAS curée main, CEFR A1, fr→en
-- `packs/llm/a1/fr-en-v1.jsonl.gz` — générée via Claude CLI (ll_lab/scripts/llm/)
-- `packs/tatoeba/none/fr-en-v1.jsonl.gz` — co-occurrence Tatoeba, sans niveau CEFR
+- `packs/curated/ll-1/fr-en-v1.jsonl.gz` — concepts ll-1 curés main, fr→en
+- `packs/llm/ll-1/fr-en-v1.jsonl.gz` — générée via Claude CLI (ll_lab/scripts/llm/)
+- `packs/tatoeba/none/fr-en-v1.jsonl.gz` — co-occurrence Tatoeba, sans palier
 
-`level = "none"` est réservé aux sources qui ne sont pas annotées CEFR
-(typiquement Tatoeba — freq-rank pur).
+`level = "none"` est réservé aux sources qui n'ont pas d'unité conceptuelle
+attachée à un palier LL (typiquement Tatoeba — freq-rank pur).
+
+Les paliers `ll-N` sont définis par la **Norme LL** documentée dans
+`ll_lab/concepts/SPEC.md` : chaque palier est un set fixé de concepts,
+livré intégralement dans toutes les langues couvertes. Mappings
+indicatifs : `ll-1 ≈ CEFR A1 ≈ JLPT N5 ≈ HSK 1-2`, etc.
 
 ## Schéma `manifest.json` (v2)
 
@@ -38,16 +43,16 @@ Exemples :
   "version": 2,
   "packs": [
     {
-      "id": "curated-a1-fr-en-v1",
+      "id": "curated-ll-1-fr-en-v1",
       "source": "curated",
-      "level": "a1",
+      "level": "ll-1",
       "src_lang": "fr",
       "dst_lang": "en",
       "version": 1,
-      "size_bytes": 1050,
+      "size_bytes": 1064,
       "sha256": "<sha256 du .jsonl.gz>",
-      "url": "https://raw.githubusercontent.com/grosjeanbaptiste/ll_data/main/packs/curated/a1/fr-en-v1.jsonl.gz",
-      "license": "CC-BY 4.0 (LL curated, A1 CEFR)"
+      "url": "https://raw.githubusercontent.com/grosjeanbaptiste/ll_data/main/packs/curated/ll-1/fr-en-v1.jsonl.gz",
+      "license": "CC-BY 4.0 (LL curated)"
     }
   ]
 }
@@ -56,7 +61,8 @@ Exemples :
 - `version` (racine) = version du **format manifest** (v2 depuis 2026-06-26).
 - `id` = `<source>-<level>-<src>-<dst>-v<n>` (slug stable, unique).
 - `source` ∈ {`curated`, `llm`, `tatoeba`}.
-- `level` ∈ {`a1`, `a2`, `b1`, `b2`, `c1`, `c2`, `none`}.
+- `level` ∈ {`ll-1`, `ll-2`, …, `ll-7`, `none`} — paliers de la **Norme LL**
+  (voir `ll_lab/concepts/SPEC.md`).
 - `version` (pack) = version du pack lui-même (pour invalidation de cache).
 
 ## Schéma d'une ligne JSONL (`WireTrio`)
