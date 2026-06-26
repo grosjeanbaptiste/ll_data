@@ -24,9 +24,15 @@ packs/
 ```
 
 Exemples :
-- `packs/curated/ll-1/fr-en-v1.jsonl.gz` — concepts ll-1 curés main, fr→en
-- `packs/llm/ll-1/fr-en-v1.jsonl.gz` — générée via Claude CLI (ll_lab/scripts/llm/)
-- `packs/tatoeba/none/fr-en-v1.jsonl.gz` — co-occurrence Tatoeba, sans palier
+- `packs/curated/ll-1/en-fr-v1.jsonl.gz` — concepts ll-1 curés main, paire {en, fr} **non-orientée**
+- `packs/llm/ll-1/en-fr-v1.jsonl.gz` — générée via Claude CLI (ll_lab/scripts/llm/)
+- `packs/tatoeba/none/en-fr-v1.jsonl.gz` — co-occurrence Tatoeba, sans palier
+
+**Convention non-orientée** : un seul fichier par paire de langues
+distincte, nommé en ordre alphabétique (`src_lang < dst_lang`). Le pack
+contient les trios stockés dans ce sens canonique ; l'app inverse à la
+volée pour drill dans l'autre sens. Pour 6 langues couvertes, ça fait
+**15 packs par palier** (au lieu de 30 en mode orienté).
 
 `level = "none"` est réservé aux sources qui n'ont pas d'unité conceptuelle
 attachée à un palier LL (typiquement Tatoeba — freq-rank pur).
