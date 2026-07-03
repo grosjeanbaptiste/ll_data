@@ -1,4 +1,305 @@
 {
   "version": 1,
-  "packs": []
+  "packs": [
+    {
+      "id": "cefr-a1-fr-en-v1",
+      "version": 1,
+      "src_lang": "fr",
+      "dst_lang": "en",
+      "size_bytes": 1000,
+      "sha256": "896037188b95b5affdc93a49ff81259951d0ff097f8eaeca63c319ad491b83ec",
+      "url": "https://raw.githubusercontent.com/grosjeanbaptiste/ll_data/main/packs/cefr-a1-fr-en-v1.jsonl.gz",
+      "license": "CC-BY 4.0 (LL curated, A1 CEFR)"
+    },
+    {
+      "id": "cefr-a1-fr-nl-v1",
+      "version": 1,
+      "src_lang": "fr",
+      "dst_lang": "nl",
+      "size_bytes": 1017,
+      "sha256": "65199e5e0cc3a1d2dde11a669e8abad6c7c9aca136a77d5250bc5c0343699b6a",
+      "url": "https://raw.githubusercontent.com/grosjeanbaptiste/ll_data/main/packs/cefr-a1-fr-nl-v1.jsonl.gz",
+      "license": "CC-BY 4.0 (LL curated, A1 CEFR)"
+    },
+    {
+      "id": "cefr-a1-fr-es-v1",
+      "version": 1,
+      "src_lang": "fr",
+      "dst_lang": "es",
+      "size_bytes": 1021,
+      "sha256": "7d8c63c2cd6ed21349ecdb4f0b9219f7fdbbe8208b8498c12119c883edd5691f",
+      "url": "https://raw.githubusercontent.com/grosjeanbaptiste/ll_data/main/packs/cefr-a1-fr-es-v1.jsonl.gz",
+      "license": "CC-BY 4.0 (LL curated, A1 CEFR)"
+    },
+    {
+      "id": "cefr-a1-fr-de-v1",
+      "version": 1,
+      "src_lang": "fr",
+      "dst_lang": "de",
+      "size_bytes": 1056,
+      "sha256": "740eeffd5186552c6d0cd1dcb1c11b6ce0dd5cca5e533095110fe1dde37f2534",
+      "url": "https://raw.githubusercontent.com/grosjeanbaptiste/ll_data/main/packs/cefr-a1-fr-de-v1.jsonl.gz",
+      "license": "CC-BY 4.0 (LL curated, A1 CEFR)"
+    },
+    {
+      "id": "cefr-a1-fr-it-v1",
+      "version": 1,
+      "src_lang": "fr",
+      "dst_lang": "it",
+      "size_bytes": 1031,
+      "sha256": "8b4e567e0cb27dda1ca0953b88d49610a961e5448db96239d661b1091e116e2f",
+      "url": "https://raw.githubusercontent.com/grosjeanbaptiste/ll_data/main/packs/cefr-a1-fr-it-v1.jsonl.gz",
+      "license": "CC-BY 4.0 (LL curated, A1 CEFR)"
+    },
+    {
+      "id": "cefr-a1-en-fr-v1",
+      "version": 1,
+      "src_lang": "en",
+      "dst_lang": "fr",
+      "size_bytes": 998,
+      "sha256": "515f63834f1170a22ca066c89b115e9e7a2c4c1ceb460fe0a50679ef75980686",
+      "url": "https://raw.githubusercontent.com/grosjeanbaptiste/ll_data/main/packs/cefr-a1-en-fr-v1.jsonl.gz",
+      "license": "CC-BY 4.0 (LL curated, A1 CEFR)"
+    },
+    {
+      "id": "cefr-a1-en-nl-v1",
+      "version": 1,
+      "src_lang": "en",
+      "dst_lang": "nl",
+      "size_bytes": 960,
+      "sha256": "22ca5df9b42a58bafbe1e7e24342462be3ce75feccfefd4470e20b2aaa19be5b",
+      "url": "https://raw.githubusercontent.com/grosjeanbaptiste/ll_data/main/packs/cefr-a1-en-nl-v1.jsonl.gz",
+      "license": "CC-BY 4.0 (LL curated, A1 CEFR)"
+    },
+    {
+      "id": "cefr-a1-en-es-v1",
+      "version": 1,
+      "src_lang": "en",
+      "dst_lang": "es",
+      "size_bytes": 1003,
+      "sha256": "03655a440d8833eba4743ad762c2cadca4b8dd3c204e191d8963480a553019a0",
+      "url": "https://raw.githubusercontent.com/grosjeanbaptiste/ll_data/main/packs/cefr-a1-en-es-v1.jsonl.gz",
+      "license": "CC-BY 4.0 (LL curated, A1 CEFR)"
+    },
+    {
+      "id": "cefr-a1-en-de-v1",
+      "version": 1,
+      "src_lang": "en",
+      "dst_lang": "de",
+      "size_bytes": 1009,
+      "sha256": "b6effec784ea84d9b40776d95f361f1848516205a6fbd024eb3721cdf08c54e1",
+      "url": "https://raw.githubusercontent.com/grosjeanbaptiste/ll_data/main/packs/cefr-a1-en-de-v1.jsonl.gz",
+      "license": "CC-BY 4.0 (LL curated, A1 CEFR)"
+    },
+    {
+      "id": "cefr-a1-en-it-v1",
+      "version": 1,
+      "src_lang": "en",
+      "dst_lang": "it",
+      "size_bytes": 1008,
+      "sha256": "8ac790a1c24e390072ac09f9e99abe7e86193dfddd4bd94b4c25cbf004225ab3",
+      "url": "https://raw.githubusercontent.com/grosjeanbaptiste/ll_data/main/packs/cefr-a1-en-it-v1.jsonl.gz",
+      "license": "CC-BY 4.0 (LL curated, A1 CEFR)"
+    },
+    {
+      "id": "cefr-a1-nl-fr-v1",
+      "version": 1,
+      "src_lang": "nl",
+      "dst_lang": "fr",
+      "size_bytes": 1019,
+      "sha256": "eadf315d484330a95e00faee41e744091291e6f1b7f2f4afb3676e51c2cb3bad",
+      "url": "https://raw.githubusercontent.com/grosjeanbaptiste/ll_data/main/packs/cefr-a1-nl-fr-v1.jsonl.gz",
+      "license": "CC-BY 4.0 (LL curated, A1 CEFR)"
+    },
+    {
+      "id": "cefr-a1-nl-en-v1",
+      "version": 1,
+      "src_lang": "nl",
+      "dst_lang": "en",
+      "size_bytes": 960,
+      "sha256": "fb18eea7b8d9e4342db1f4e976007305e0fe29cde99eb1622d01f409247c690f",
+      "url": "https://raw.githubusercontent.com/grosjeanbaptiste/ll_data/main/packs/cefr-a1-nl-en-v1.jsonl.gz",
+      "license": "CC-BY 4.0 (LL curated, A1 CEFR)"
+    },
+    {
+      "id": "cefr-a1-nl-es-v1",
+      "version": 1,
+      "src_lang": "nl",
+      "dst_lang": "es",
+      "size_bytes": 1022,
+      "sha256": "e7d6bee775e4ae9aad429d69007bf1451420d535b7675df73911281cdc921c34",
+      "url": "https://raw.githubusercontent.com/grosjeanbaptiste/ll_data/main/packs/cefr-a1-nl-es-v1.jsonl.gz",
+      "license": "CC-BY 4.0 (LL curated, A1 CEFR)"
+    },
+    {
+      "id": "cefr-a1-nl-de-v1",
+      "version": 1,
+      "src_lang": "nl",
+      "dst_lang": "de",
+      "size_bytes": 1013,
+      "sha256": "c07423d7095d3ac33d75746850e9eeb8069f8cf6927ca097139f1396a87bdc78",
+      "url": "https://raw.githubusercontent.com/grosjeanbaptiste/ll_data/main/packs/cefr-a1-nl-de-v1.jsonl.gz",
+      "license": "CC-BY 4.0 (LL curated, A1 CEFR)"
+    },
+    {
+      "id": "cefr-a1-nl-it-v1",
+      "version": 1,
+      "src_lang": "nl",
+      "dst_lang": "it",
+      "size_bytes": 1030,
+      "sha256": "d92c5601d1b56f06d162188b1dc71bf1a82acf32b6dc3ccc25283f89550d5904",
+      "url": "https://raw.githubusercontent.com/grosjeanbaptiste/ll_data/main/packs/cefr-a1-nl-it-v1.jsonl.gz",
+      "license": "CC-BY 4.0 (LL curated, A1 CEFR)"
+    },
+    {
+      "id": "cefr-a1-es-fr-v1",
+      "version": 1,
+      "src_lang": "es",
+      "dst_lang": "fr",
+      "size_bytes": 1018,
+      "sha256": "290313adfc483e2113e3563c4e8b621407493d2ccd1b8a2432b508ecac1b6e59",
+      "url": "https://raw.githubusercontent.com/grosjeanbaptiste/ll_data/main/packs/cefr-a1-es-fr-v1.jsonl.gz",
+      "license": "CC-BY 4.0 (LL curated, A1 CEFR)"
+    },
+    {
+      "id": "cefr-a1-es-en-v1",
+      "version": 1,
+      "src_lang": "es",
+      "dst_lang": "en",
+      "size_bytes": 1005,
+      "sha256": "6a5a973a79eac01edc8c3125588da0034514d441d642e7cffaf2488d3fb0d7b1",
+      "url": "https://raw.githubusercontent.com/grosjeanbaptiste/ll_data/main/packs/cefr-a1-es-en-v1.jsonl.gz",
+      "license": "CC-BY 4.0 (LL curated, A1 CEFR)"
+    },
+    {
+      "id": "cefr-a1-es-nl-v1",
+      "version": 1,
+      "src_lang": "es",
+      "dst_lang": "nl",
+      "size_bytes": 1019,
+      "sha256": "ca8e29a08cb60e5c9fda61a048c2eeca6b2ca3dc645115e811c6e16751eec8d4",
+      "url": "https://raw.githubusercontent.com/grosjeanbaptiste/ll_data/main/packs/cefr-a1-es-nl-v1.jsonl.gz",
+      "license": "CC-BY 4.0 (LL curated, A1 CEFR)"
+    },
+    {
+      "id": "cefr-a1-es-de-v1",
+      "version": 1,
+      "src_lang": "es",
+      "dst_lang": "de",
+      "size_bytes": 1051,
+      "sha256": "5b126c20905676e737d579de3d30ceacc9f85d0e46f6691ea7c7bcc433a45ed5",
+      "url": "https://raw.githubusercontent.com/grosjeanbaptiste/ll_data/main/packs/cefr-a1-es-de-v1.jsonl.gz",
+      "license": "CC-BY 4.0 (LL curated, A1 CEFR)"
+    },
+    {
+      "id": "cefr-a1-es-it-v1",
+      "version": 1,
+      "src_lang": "es",
+      "dst_lang": "it",
+      "size_bytes": 1008,
+      "sha256": "9f09d7460f4699c6e9a40afa9774355f8944e835f42e2144da7786bb4b48b195",
+      "url": "https://raw.githubusercontent.com/grosjeanbaptiste/ll_data/main/packs/cefr-a1-es-it-v1.jsonl.gz",
+      "license": "CC-BY 4.0 (LL curated, A1 CEFR)"
+    },
+    {
+      "id": "cefr-a1-de-fr-v1",
+      "version": 1,
+      "src_lang": "de",
+      "dst_lang": "fr",
+      "size_bytes": 1053,
+      "sha256": "1aa19e5304bf17ceb2b8a67b7aeaeeaad1228d624c79863bd1c0ca4d7bf3f368",
+      "url": "https://raw.githubusercontent.com/grosjeanbaptiste/ll_data/main/packs/cefr-a1-de-fr-v1.jsonl.gz",
+      "license": "CC-BY 4.0 (LL curated, A1 CEFR)"
+    },
+    {
+      "id": "cefr-a1-de-en-v1",
+      "version": 1,
+      "src_lang": "de",
+      "dst_lang": "en",
+      "size_bytes": 1013,
+      "sha256": "5abb654a9682df4e295efb2687850515a70f68a899e612b42c37ef28afd8f924",
+      "url": "https://raw.githubusercontent.com/grosjeanbaptiste/ll_data/main/packs/cefr-a1-de-en-v1.jsonl.gz",
+      "license": "CC-BY 4.0 (LL curated, A1 CEFR)"
+    },
+    {
+      "id": "cefr-a1-de-nl-v1",
+      "version": 1,
+      "src_lang": "de",
+      "dst_lang": "nl",
+      "size_bytes": 1008,
+      "sha256": "8bef3c70dd52bf7ef77e9dcd1ba155d1c2543e926fed71aad89e6074a4785b42",
+      "url": "https://raw.githubusercontent.com/grosjeanbaptiste/ll_data/main/packs/cefr-a1-de-nl-v1.jsonl.gz",
+      "license": "CC-BY 4.0 (LL curated, A1 CEFR)"
+    },
+    {
+      "id": "cefr-a1-de-es-v1",
+      "version": 1,
+      "src_lang": "de",
+      "dst_lang": "es",
+      "size_bytes": 1047,
+      "sha256": "2ab9bddbb0b20f371dd9ba04df5befc87c0b68c5661aeaa7ea5b9bc0cd71fc80",
+      "url": "https://raw.githubusercontent.com/grosjeanbaptiste/ll_data/main/packs/cefr-a1-de-es-v1.jsonl.gz",
+      "license": "CC-BY 4.0 (LL curated, A1 CEFR)"
+    },
+    {
+      "id": "cefr-a1-de-it-v1",
+      "version": 1,
+      "src_lang": "de",
+      "dst_lang": "it",
+      "size_bytes": 1063,
+      "sha256": "c1d63981c2edc239552e86d1d18977312c1bba10c070f452d8b2a9ac023d2723",
+      "url": "https://raw.githubusercontent.com/grosjeanbaptiste/ll_data/main/packs/cefr-a1-de-it-v1.jsonl.gz",
+      "license": "CC-BY 4.0 (LL curated, A1 CEFR)"
+    },
+    {
+      "id": "cefr-a1-it-fr-v1",
+      "version": 1,
+      "src_lang": "it",
+      "dst_lang": "fr",
+      "size_bytes": 1033,
+      "sha256": "cf9ccea9bd59dda20fe069c60a5a36ccd58b92189a4d70b2465439dec7bba589",
+      "url": "https://raw.githubusercontent.com/grosjeanbaptiste/ll_data/main/packs/cefr-a1-it-fr-v1.jsonl.gz",
+      "license": "CC-BY 4.0 (LL curated, A1 CEFR)"
+    },
+    {
+      "id": "cefr-a1-it-en-v1",
+      "version": 1,
+      "src_lang": "it",
+      "dst_lang": "en",
+      "size_bytes": 1010,
+      "sha256": "3c7e27189ceff0f8ed1ccdfc78ee082301d1ba2c7f9dab3b93970d0617d5454a",
+      "url": "https://raw.githubusercontent.com/grosjeanbaptiste/ll_data/main/packs/cefr-a1-it-en-v1.jsonl.gz",
+      "license": "CC-BY 4.0 (LL curated, A1 CEFR)"
+    },
+    {
+      "id": "cefr-a1-it-nl-v1",
+      "version": 1,
+      "src_lang": "it",
+      "dst_lang": "nl",
+      "size_bytes": 1030,
+      "sha256": "9e7b663a8dc8b1af454236da982f2c9c08b88d8637dda847364aa799edca1878",
+      "url": "https://raw.githubusercontent.com/grosjeanbaptiste/ll_data/main/packs/cefr-a1-it-nl-v1.jsonl.gz",
+      "license": "CC-BY 4.0 (LL curated, A1 CEFR)"
+    },
+    {
+      "id": "cefr-a1-it-es-v1",
+      "version": 1,
+      "src_lang": "it",
+      "dst_lang": "es",
+      "size_bytes": 1005,
+      "sha256": "eb61fb29d175cc6bb893790c1c3cf507623e1285500af09ce3024fe06c0498eb",
+      "url": "https://raw.githubusercontent.com/grosjeanbaptiste/ll_data/main/packs/cefr-a1-it-es-v1.jsonl.gz",
+      "license": "CC-BY 4.0 (LL curated, A1 CEFR)"
+    },
+    {
+      "id": "cefr-a1-it-de-v1",
+      "version": 1,
+      "src_lang": "it",
+      "dst_lang": "de",
+      "size_bytes": 1062,
+      "sha256": "7b1171e0e4a0dd5124a1512092e024236599fc66db234dc53615ad7e02d9da64",
+      "url": "https://raw.githubusercontent.com/grosjeanbaptiste/ll_data/main/packs/cefr-a1-it-de-v1.jsonl.gz",
+      "license": "CC-BY 4.0 (LL curated, A1 CEFR)"
+    }
+  ]
 }
