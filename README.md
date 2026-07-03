@@ -7,9 +7,10 @@ Packs de seed pour l'app **LL** (apprentissage de langues).
 - `manifest.json` — liste des packs disponibles avec métadonnées (id, source,
   level, paire de langues, version, taille, sha256, URL, licence).
 - `packs/<source>/<level>/<pair>-v<n>.jsonl.gz` — un fichier par pack,
-  classé par provenance (curated/llm/tatoeba) puis niveau CEFR
-  (a1/a2/b1/b2/c1/c2/none). Chaque ligne est un `WireTrio` JSON conforme
-  au schéma de `ll-ingest` (`SeedRecord`).
+  classé par provenance (curated/llm/tatoeba) puis palier LL
+  (ll-1/ll-2/…/ll-7/none). Chaque ligne est un `WireTrio` JSON conforme
+  au schéma de `ll-ingest` (`SeedRecord`). Les paliers `ll-N` sont
+  définis par la **Norme LL** dans `ll_lab/concepts/SPEC.md`.
 
 ## Format `WireTrio`
 
