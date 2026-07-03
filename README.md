@@ -4,10 +4,12 @@ Packs de seed pour l'app **LL** (apprentissage de langues).
 
 ## Contenu
 
-- `manifest.json` — liste des packs disponibles avec métadonnées (id, version,
-  taille, paire de langues, URL de download).
-- `packs/*.jsonl.gz` — un fichier par pack. Chaque ligne est un `WireTrio`
-  JSON conforme au schéma de `ll-ingest` (`SeedRecord`).
+- `manifest.json` — liste des packs disponibles avec métadonnées (id, source,
+  level, paire de langues, version, taille, sha256, URL, licence).
+- `packs/<source>/<level>/<pair>-v<n>.jsonl.gz` — un fichier par pack,
+  classé par provenance (curated/llm/tatoeba) puis niveau CEFR
+  (a1/a2/b1/b2/c1/c2/none). Chaque ligne est un `WireTrio` JSON conforme
+  au schéma de `ll-ingest` (`SeedRecord`).
 
 ## Format `WireTrio`
 
@@ -23,8 +25,8 @@ Packs de seed pour l'app **LL** (apprentissage de langues).
 ## Distribution
 
 Les packs sont distribués via :
-- **GitHub raw** pour les petits packs (< 1 MB compressé) directement depuis
-  `main` : `https://raw.githubusercontent.com/grosjeanbaptiste/ll_data/main/packs/<nom>.jsonl.gz`
+- **GitHub raw** pour les petits packs (< 1 MB compressé) :
+  `https://raw.githubusercontent.com/grosjeanbaptiste/ll_data/main/packs/<source>/<level>/<pair>-v<n>.jsonl.gz`
 - **GitHub Releases** pour les gros packs (> 1 MB) en tant qu'assets attachés
   à une release versionnée.
 
@@ -33,13 +35,15 @@ Le `manifest.json` distant (raw) sert d'index : c'est ce que la crate
 
 ## Ajouter un pack
 
-1. Générer le JSONL.gz via `cargo run -p ll-cli -- tatoeba` puis `seed export`
-   dans `ll_app/`.
-2. Le déposer ici sous `packs/pack-<langues>-<source>-v<n>.jsonl.gz`.
-3. Mettre à jour `manifest.json` (id unique, version monotone, sha256
-   recommandé).
-4. Commit + tag `data-v<n>` + push. Si gros pack : créer une release et y
-   attacher le `.jsonl.gz`.
+Les packs sont générés depuis le repo voisin `ll_lab/` (scripts curated /
+LLM / Tatoeba) et atterrissent ici sous `packs/<source>/<level>/`. Le
+script générateur patche aussi `manifest.json` (id, source, level, paire,
+taille, sha256, URL).
+
+1. Lancer le générateur dans `ll_lab/` (cf. son AGENTS.md).
+2. Vérifier le diff sur `manifest.json` + le placement des nouveaux fichiers.
+3. Commit + push depuis `ll_data/`. Si gros pack : créer une release et y
+   attacher le `.jsonl.gz` (l'URL du manifest pointe alors vers l'asset).
 
 ## Licence
 
