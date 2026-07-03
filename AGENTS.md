@@ -10,9 +10,9 @@ Aucun code — uniquement des fichiers de données :
 - `packs/*.jsonl.gz`
 - documentation
 
-Les data sont consommées par la crate `ll-packs` (dans `ll_app/crates/ll-packs/`,
-à créer) qui les fetch et les pousse dans la DB locale via le use case
-`import_seed` existant.
+Les data sont consommées par la crate `ll-packs` (dans
+`ll_app/crates/ll-packs/`) qui les fetch et les pousse dans la DB locale
+via le use case `import_seed`.
 
 ## Schéma `manifest.json`
 
