@@ -724,6 +724,32 @@
   ],
   "concept_packs": [
     {
+      "id": "curated-concept-all-v8",
+      "source": "curated",
+      "kind": "concept",
+      "tier_max": "ll-4",
+      "tier_counts": {
+        "ll-1": 361,
+        "ll-2": 630,
+        "ll-3": 530,
+        "ll-4": 687
+      },
+      "concept_count": 2208,
+      "langs": [
+        "fr",
+        "en",
+        "nl",
+        "es",
+        "de",
+        "it"
+      ],
+      "version": 8,
+      "size_bytes": 353246,
+      "sha256": "84f24d6a29e92f3897f05b7167b736497e48d5c8f1b964b13bc8ac32e4dd98ce",
+      "url": "https://raw.githubusercontent.com/grosjeanbaptiste/ll_data/main/packs/curated/concept/all-v8.jsonl.gz",
+      "license": "CC-BY 4.0 (LL curated)"
+    },
+    {
       "id": "curated-concept-all-v7",
       "source": "curated",
       "kind": "concept",
