@@ -724,7 +724,7 @@
   ],
   "concept_packs": [
     {
-      "id": "curated-concept-all-v9",
+      "id": "curated-concept-all-v0",
       "source": "curated",
       "kind": "concept",
       "tier_max": "ll-4",
@@ -743,10 +743,10 @@
         "de",
         "it"
       ],
-      "version": 9,
+      "version": 0,
       "size_bytes": 353246,
       "sha256": "2a94443cfe1168aa55471951dfff018e73a592e415a689e168147c0e61c30809",
-      "url": "https://raw.githubusercontent.com/grosjeanbaptiste/ll_data/main/packs/curated/concept/all-v9.jsonl.gz",
+      "url": "https://raw.githubusercontent.com/grosjeanbaptiste/ll_data/main/packs/curated/concept/all-v0.jsonl.gz",
       "license": "CC-BY 4.0 (LL curated)"
     }
   ]
