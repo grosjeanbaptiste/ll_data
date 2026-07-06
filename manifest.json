@@ -724,15 +724,15 @@
   ],
   "concept_packs": [
     {
-      "id": "curated-concept-ll-1-v5",
+      "id": "curated-concept-ll-1-v6",
       "source": "curated",
       "kind": "concept",
       "tier": "ll-1",
       "tier_max": "ll-1",
       "tier_counts": {
-        "ll-1": 999
+        "ll-1": 1237
       },
-      "concept_count": 999,
+      "concept_count": 1237,
       "langs": [
         "fr",
         "en",
@@ -741,22 +741,22 @@
         "de",
         "it"
       ],
-      "version": 5,
-      "size_bytes": 156099,
-      "sha256": "ed634e9b68fbb8b8a0cc3b204ad81c59a6fcdf403652d64ce5234660c5d72cf5",
-      "url": "https://raw.githubusercontent.com/grosjeanbaptiste/ll_data/main/packs/curated/concept/ll-1-v5.jsonl.gz",
+      "version": 6,
+      "size_bytes": 183860,
+      "sha256": "eecf808a1b0e43379cc75d46c8bda7e6dd343ebe1891a1687da4f8a1ac482146",
+      "url": "https://raw.githubusercontent.com/grosjeanbaptiste/ll_data/main/packs/curated/concept/ll-1-v6.jsonl.gz",
       "license": "CC-BY 4.0 (LL curated)"
     },
     {
-      "id": "curated-concept-ll-2-v5",
+      "id": "curated-concept-ll-2-v6",
       "source": "curated",
       "kind": "concept",
       "tier": "ll-2",
       "tier_max": "ll-2",
       "tier_counts": {
-        "ll-2": 981
+        "ll-2": 1137
       },
-      "concept_count": 981,
+      "concept_count": 1137,
       "langs": [
         "fr",
         "en",
@@ -765,22 +765,22 @@
         "de",
         "it"
       ],
-      "version": 5,
-      "size_bytes": 152946,
-      "sha256": "2f9d26d9981fd7d3e0b8a23735a3eaee9f53ecb46fe8a7c532d6b7ce854fce61",
-      "url": "https://raw.githubusercontent.com/grosjeanbaptiste/ll_data/main/packs/curated/concept/ll-2-v5.jsonl.gz",
+      "version": 6,
+      "size_bytes": 171267,
+      "sha256": "4a065e570817c071b0579a69d4c89746e4c9bb8bde71b691fe1a6e99ae4203a1",
+      "url": "https://raw.githubusercontent.com/grosjeanbaptiste/ll_data/main/packs/curated/concept/ll-2-v6.jsonl.gz",
       "license": "CC-BY 4.0 (LL curated)"
     },
     {
-      "id": "curated-concept-ll-3-v5",
+      "id": "curated-concept-ll-3-v6",
       "source": "curated",
       "kind": "concept",
       "tier": "ll-3",
       "tier_max": "ll-3",
       "tier_counts": {
-        "ll-3": 324
+        "ll-3": 389
       },
-      "concept_count": 324,
+      "concept_count": 389,
       "langs": [
         "fr",
         "en",
@@ -789,22 +789,22 @@
         "de",
         "it"
       ],
-      "version": 5,
-      "size_bytes": 48447,
-      "sha256": "a39489009753500c5e6d2c9f57330c11a871ffa6a40f12568c0c7a959c52ccf0",
-      "url": "https://raw.githubusercontent.com/grosjeanbaptiste/ll_data/main/packs/curated/concept/ll-3-v5.jsonl.gz",
+      "version": 6,
+      "size_bytes": 57021,
+      "sha256": "4582ea5e98acfc4b574080967d5077fba3acebea96608d4e182f8424bab0109e",
+      "url": "https://raw.githubusercontent.com/grosjeanbaptiste/ll_data/main/packs/curated/concept/ll-3-v6.jsonl.gz",
       "license": "CC-BY 4.0 (LL curated)"
     },
     {
-      "id": "curated-concept-ll-4-v5",
+      "id": "curated-concept-ll-4-v6",
       "source": "curated",
       "kind": "concept",
       "tier": "ll-4",
       "tier_max": "ll-4",
       "tier_counts": {
-        "ll-4": 236
+        "ll-4": 319
       },
-      "concept_count": 236,
+      "concept_count": 319,
       "langs": [
         "fr",
         "en",
@@ -813,22 +813,22 @@
         "de",
         "it"
       ],
-      "version": 5,
-      "size_bytes": 39604,
-      "sha256": "d5acbdd3fb2d980e47fd9991cd55aec5d10b959dc0f0858e2f5e3071d1285e8c",
-      "url": "https://raw.githubusercontent.com/grosjeanbaptiste/ll_data/main/packs/curated/concept/ll-4-v5.jsonl.gz",
+      "version": 6,
+      "size_bytes": 50147,
+      "sha256": "9f6771a1b4df183059e1a26e4cf06d67b3cc080ec42cd2593a108f4f69c5ad9a",
+      "url": "https://raw.githubusercontent.com/grosjeanbaptiste/ll_data/main/packs/curated/concept/ll-4-v6.jsonl.gz",
       "license": "CC-BY 4.0 (LL curated)"
     },
     {
-      "id": "curated-concept-ll-5-v5",
+      "id": "curated-concept-ll-5-v6",
       "source": "curated",
       "kind": "concept",
       "tier": "ll-5",
       "tier_max": "ll-5",
       "tier_counts": {
-        "ll-5": 103
+        "ll-5": 139
       },
-      "concept_count": 103,
+      "concept_count": 139,
       "langs": [
         "fr",
         "en",
@@ -837,22 +837,22 @@
         "de",
         "it"
       ],
-      "version": 5,
-      "size_bytes": 15921,
-      "sha256": "cd1361d487d5dbc0b0dbcd7773cedfc6ffe397c0141776802842dfab2b558ea4",
-      "url": "https://raw.githubusercontent.com/grosjeanbaptiste/ll_data/main/packs/curated/concept/ll-5-v5.jsonl.gz",
+      "version": 6,
+      "size_bytes": 20472,
+      "sha256": "70c8892bd8bdc686e8cfd7e889bb25b4299b96b191b454d35dd2511ff021df36",
+      "url": "https://raw.githubusercontent.com/grosjeanbaptiste/ll_data/main/packs/curated/concept/ll-5-v6.jsonl.gz",
       "license": "CC-BY 4.0 (LL curated)"
     },
     {
-      "id": "curated-concept-ll-6-v5",
+      "id": "curated-concept-ll-6-v6",
       "source": "curated",
       "kind": "concept",
       "tier": "ll-6",
       "tier_max": "ll-6",
       "tier_counts": {
-        "ll-6": 162
+        "ll-6": 194
       },
-      "concept_count": 162,
+      "concept_count": 194,
       "langs": [
         "fr",
         "en",
@@ -861,22 +861,22 @@
         "de",
         "it"
       ],
-      "version": 5,
-      "size_bytes": 24059,
-      "sha256": "8ce0c50daa724fd806f853d1c8cd33fc430855eef50734399c9ff65a541d9dc8",
-      "url": "https://raw.githubusercontent.com/grosjeanbaptiste/ll_data/main/packs/curated/concept/ll-6-v5.jsonl.gz",
+      "version": 6,
+      "size_bytes": 28079,
+      "sha256": "4594ace46b2ef294f3e1fa743159f6c12c7cafee2877e95db3eada928ef6c478",
+      "url": "https://raw.githubusercontent.com/grosjeanbaptiste/ll_data/main/packs/curated/concept/ll-6-v6.jsonl.gz",
       "license": "CC-BY 4.0 (LL curated)"
     },
     {
-      "id": "curated-concept-ll-7-v5",
+      "id": "curated-concept-ll-7-v6",
       "source": "curated",
       "kind": "concept",
       "tier": "ll-7",
       "tier_max": "ll-7",
       "tier_counts": {
-        "ll-7": 123
+        "ll-7": 165
       },
-      "concept_count": 123,
+      "concept_count": 165,
       "langs": [
         "fr",
         "en",
@@ -885,10 +885,10 @@
         "de",
         "it"
       ],
-      "version": 5,
-      "size_bytes": 18619,
-      "sha256": "d0d23265313737faf251277810c1bdc86512ce9858e9343e158477a718e98541",
-      "url": "https://raw.githubusercontent.com/grosjeanbaptiste/ll_data/main/packs/curated/concept/ll-7-v5.jsonl.gz",
+      "version": 6,
+      "size_bytes": 23863,
+      "sha256": "8c67ed69704639193490bd3ab76108377245e5b10f324688f649fa947f3da505",
+      "url": "https://raw.githubusercontent.com/grosjeanbaptiste/ll_data/main/packs/curated/concept/ll-7-v6.jsonl.gz",
       "license": "CC-BY 4.0 (LL curated)"
     }
   ]
