@@ -742,8 +742,8 @@
         "it"
       ],
       "version": 0,
-      "size_bytes": 176567,
-      "sha256": "185101dadab7b13ab61ebe8de323b6e04ffdc6bc4463b90a40cc3c7c5b5f794d",
+      "size_bytes": 166619,
+      "sha256": "6089bedcfd2cd3114b2c04c11b40aef75ca3fbed64f67476303cd010a1a5d366",
       "url": "https://raw.githubusercontent.com/grosjeanbaptiste/ll_data/main/packs/curated/concept/ll-1-v0.jsonl.gz",
       "license": "CC-BY 4.0 (LL curated)"
     },
@@ -766,8 +766,8 @@
         "it"
       ],
       "version": 0,
-      "size_bytes": 202251,
-      "sha256": "a919ebf3a7d698053ba406a4a2df1877ca4bd9e8cbef51a4bca5bd12630d97f9",
+      "size_bytes": 192088,
+      "sha256": "e458a96a504368b244ccc7ae26aa5b568c52f4d4aed12a6f110d2fada246806d",
       "url": "https://raw.githubusercontent.com/grosjeanbaptiste/ll_data/main/packs/curated/concept/ll-2-v0.jsonl.gz",
       "license": "CC-BY 4.0 (LL curated)"
     },
@@ -790,8 +790,8 @@
         "it"
       ],
       "version": 0,
-      "size_bytes": 135918,
-      "sha256": "6476c7ea8c646944e50d2a82656d14e894fddb9a53181cf9bfb90eed0d2df3c4",
+      "size_bytes": 130923,
+      "sha256": "b289ef88f2deb03a12e87b12ec34afeadbb9cb99087d0a71cc68a323ad0b1d28",
       "url": "https://raw.githubusercontent.com/grosjeanbaptiste/ll_data/main/packs/curated/concept/ll-3-v0.jsonl.gz",
       "license": "CC-BY 4.0 (LL curated)"
     },
@@ -814,8 +814,8 @@
         "it"
       ],
       "version": 0,
-      "size_bytes": 183047,
-      "sha256": "9fcfa533f510fbaf30562ba3229f02335a883659ea7f9e4b8d160f62acb83f01",
+      "size_bytes": 179952,
+      "sha256": "3952df1d15fd83bc1c4796265ffa41d749cf8d722d97f47ef84206ada12c6c35",
       "url": "https://raw.githubusercontent.com/grosjeanbaptiste/ll_data/main/packs/curated/concept/ll-4-v0.jsonl.gz",
       "license": "CC-BY 4.0 (LL curated)"
     },
@@ -838,8 +838,8 @@
         "it"
       ],
       "version": 0,
-      "size_bytes": 145328,
-      "sha256": "9c29332efaa1090fdd8fcf6273461fe8950be941a4a450ca1d44f056c352d749",
+      "size_bytes": 140224,
+      "sha256": "f92e996f5725e0ff01aa3589fcd589769e32b03b65de45334fd6f4fa0c1c374c",
       "url": "https://raw.githubusercontent.com/grosjeanbaptiste/ll_data/main/packs/curated/concept/ll-5-v0.jsonl.gz",
       "license": "CC-BY 4.0 (LL curated)"
     },
@@ -862,8 +862,8 @@
         "it"
       ],
       "version": 0,
-      "size_bytes": 157311,
-      "sha256": "ee504816a76fc8d8c4f063d85166b757911cd8eec3ef62e92e32cf5af04d27a9",
+      "size_bytes": 151411,
+      "sha256": "a78ac38228dbbf92d9c33e092bbbeab3237bb6ea413e5b010fefa8da235b7a2e",
       "url": "https://raw.githubusercontent.com/grosjeanbaptiste/ll_data/main/packs/curated/concept/ll-6-v0.jsonl.gz",
       "license": "CC-BY 4.0 (LL curated)"
     },
@@ -886,8 +886,8 @@
         "it"
       ],
       "version": 0,
-      "size_bytes": 231343,
-      "sha256": "5c0d0f7d5fac3df5070175e0e5c3025c2a3ba696f202e944e15025c8fa1b5844",
+      "size_bytes": 228763,
+      "sha256": "1b1e74ded16c06b78e2f277cb6a4b27a6d7d0f0be1fc696627bac89f15cb5cd7",
       "url": "https://raw.githubusercontent.com/grosjeanbaptiste/ll_data/main/packs/curated/concept/ll-7-v0.jsonl.gz",
       "license": "CC-BY 4.0 (LL curated)"
     }
