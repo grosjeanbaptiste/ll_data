@@ -766,8 +766,8 @@
         "it"
       ],
       "version": 0,
-      "size_bytes": 193373,
-      "sha256": "736fca4c3d5541aa23d73e58dd065ca228a5e2a0d93be50f1e07b75b40d0e7d1",
+      "size_bytes": 193400,
+      "sha256": "8e2f3669f414a75a7a991034e9d31f28bf1cdb1f49bb7c24e0fb0cc9fdb5652e",
       "url": "https://raw.githubusercontent.com/grosjeanbaptiste/ll_data/main/packs/curated/concept/ll-2-v0.jsonl.gz",
       "license": "CC-BY 4.0 (LL curated)"
     },
