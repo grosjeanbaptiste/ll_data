@@ -6,8 +6,8 @@ télécharge à l'install.
 ## Stack
 
 Aucun code — uniquement des fichiers de données :
-- `manifest.json` à la racine (schéma v2)
-- `packs/<source>/<level>/<pair>-v<n>.jsonl.gz`
+- `manifest.json` à la racine (schéma v2 + `concept_packs`)
+- `packs/curated/concept/ll-N-v<n>.jsonl.gz` — un pack **concept** par palier
 - documentation
 
 Les data sont consommées par la crate `ll-packs` (dans
@@ -18,21 +18,26 @@ via le use case `import_seed`.
 
 ```
 packs/
-  <source>/        # curated | llm | tatoeba
-    <level>/       # ll-1 | ll-2 | … | ll-7 | none
-      <src>-<dst>-v<n>.jsonl.gz
+  curated/
+    concept/       # un pack par palier, toutes les langues
+      ll-1-v0.jsonl.gz … ll-7-v0.jsonl.gz
 ```
 
-Exemples :
-- `packs/curated/ll-1/en-fr-v1.jsonl.gz` — concepts ll-1 curés main, paire {en, fr} **non-orientée**
-- `packs/llm/ll-1/en-fr-v1.jsonl.gz` — générée via Claude CLI (ll_lab/scripts/llm/)
-- `packs/tatoeba/none/en-fr-v1.jsonl.gz` — co-occurrence Tatoeba, sans palier
+Chaque ligne d'un pack concept est un `SourceRecord` : un concept et ses
+realizations dans les 6 langues (fr, en, nl, es, de, it). **Un palier
+couvre donc toutes les paires** — l'app dérive les 30 paires orientées
+des realizations. Les packs sont listés dans `concept_packs` du manifest
+et produits par `ll_lab/scripts/concepts/rebuild_pack_v0.py`.
 
-**Convention non-orientée** : un seul fichier par paire de langues
-distincte, nommé en ordre alphabétique (`src_lang < dst_lang`). Le pack
-contient les trios stockés dans ce sens canonique ; l'app inverse à la
-volée pour drill dans l'autre sens. Pour 6 langues couvertes, ça fait
-**15 packs par palier** (au lieu de 30 en mode orienté).
+**Legacy (retiré 2026-10-01)** : l'ancien format « un pack par paire et par
+palier » (`packs/curated/ll-1..4/<src>-<dst>-v7.jsonl.gz`, 60 packs) n'est
+plus lu par l'app depuis le passage concept-only. Il était généré depuis
+les mêmes YAML de `ll_lab/concepts/`, sans les corrections ultérieures
+(92 % identique aux packs concept, le reste = erreurs corrigées depuis).
+Les fichiers sont supprimés ; `packs` reste présent mais vide dans le
+manifest car les versions installées de l'app exigent ce champ. Le
+générateur `build_packs.py` est désactivé. Les sections de schéma
+ci-dessous décrivent ce format historique.
 
 `level = "none"` est réservé aux sources qui n'ont pas d'unité conceptuelle
 attachée à un palier LL (typiquement Tatoeba — freq-rank pur).
